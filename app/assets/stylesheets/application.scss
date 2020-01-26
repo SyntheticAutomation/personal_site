@@ -39,12 +39,12 @@ nav {
 }
 
 .section-hero {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(
       to right bottom,
       rgba(rgb(255, 255, 255), 0.001),
       rgba(rgb(255, 255, 255), 0.001)),
-  url(https://legacy-images1.foliohd.com/32/79/327982-1920-1200.jpg);
+  url(https://legacy-images3.foliohd.com/32/79/327973-1920-1200.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,9 +73,10 @@ nav {
   transform: translateY(-50px);
 }
 
-.nav-left {
-  float: left;
-  padding-top: 20px;
+.profile-line {
+  color: black;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .nav-left li {
