@@ -1,0 +1,114 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ *,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+  background: #000000; 
+  color: #black;
+  font-family: 'Cinzel', serif;
+  box-sizing: border-box;
+}
+
+header {
+  height: 25vh;
+}
+
+nav {
+  list-style: none;
+}
+
+.section-hero {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(rgb(255, 255, 255), 0.001),
+      rgba(rgb(255, 255, 255), 0.001)),
+  url(https://legacy-images1.foliohd.com/32/79/327982-1920-1200.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgba(0, 0, 0, 0.831);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.section-profile {
+  background-color: rgb(206, 206, 206);
+  padding: 25rem 0;
+  margin-top: -25vh;
+}
+
+.face {
+  height: 300px;
+  clip-path: circle(35% at 50% 50%);
+}
+
+.my-custom-row {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.profile-title {
+  transform: translateY(-50px);
+}
+
+.nav-left {
+  float: left;
+  padding-top: 20px;
+}
+
+.nav-left li {
+  display: inline;
+  padding-left: 20px;
+}
+
+.nav-right {
+  float: right;
+  list-style: none;
+  margin-top: 5.15rem;
+  margin-right: 5rem;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.831);
+}
+
+.nav-right li {
+  padding-right: 30px;
+  display: inline;
+}
+
+
+.centered {
+  clear: float;
+  text-align: center;
+}
+
+.separation-line {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  border-top: 0.25px solid white;
+}
