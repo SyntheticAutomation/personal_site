@@ -149,6 +149,20 @@ nav {
   color: rgba(0, 0, 0, 0.831);
 }
 
+.nav-link {
+  border: 1px solid black;
+  display: inline;
+  text-align: center;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
 .section-profile {
   background-color: rgba(252, 252, 252, 0.934);
   height: 100vh;
@@ -180,10 +194,6 @@ nav {
   padding: 0;
 }
 
-.nav-left li {
-  display: inline;
-  padding-left: 20px;
-}
 
 .nav-right {
   float: right;
