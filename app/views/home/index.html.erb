@@ -24,15 +24,22 @@
     </header>
     <%# ----------------------------------------- %>
     <section class="centered">
-      <h1 class="display-2" id="name-script"><%= render 'layouts/name'%></h3>
-      <%# <p class="lead" id="titles">"He has to learn everything about everything."</p> %>
+      <h1 class="display-2" id="name-script"><%= render 'layouts/name'%></h1>
     </section>
   </section>
   <section class="section-profile">
+      <%# <hr class="separation-line" /> %>
       <%= image_tag 'plumbus.jpg', class: 'face' %>
   </section>
   <section class="section-description">
   
+  </section>
+  <div class="heading-projects">
+    <h1 class="display-1 project-heading" >Recent Projects</h1>
+    
+  </div>
+  <section class="section-projects">
+    <%= render 'layouts/projects'%>
   </section>
 
 </body>
