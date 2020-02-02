@@ -177,48 +177,14 @@ nav {
   }
 }
 
-.section-profile {
-  background-color: rgba(252, 252, 252, 0.934);
-  height: 100vh;
-  // padding: 25rem 0;
-  
-  z-index: 1;
-  color: black;
-  font-family: 'Roboto', 'sans-serif';
-  // transform: skewY(-7deg);
-  // margin-top: -10rem;
-  // & > * {
-    // transform: skewY(7deg);
-  // }
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(205, 194, 181, 0.6),
-      rgba(205, 194, 181, 0.6)),
-  url(https://images.unsplash.com/photo-1556106792-39992e83c564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80);
-  background-color: transparent;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 0px;
-}
 
-.face {
-  height: 300px;
-  clip-path: circle(35% at 50% 50%);
-}
 
 .my-custom-row {
   max-width: 100%;
   margin: 0 auto;
 }
 
-.profile-line {
-  color: black;
-  width: 50%;
-  margin: 0 auto;
-  padding: 0;
-}
+
 
 
 .nav-right {
@@ -238,9 +204,7 @@ nav {
   display: inline;
 }
 
-.profile-header {
-  text-align: center;
-}
+
 
 .centered {
   clear: float;
@@ -257,6 +221,7 @@ nav {
 .project-heading {
   text-align: center;
   clear: float;
+  margin: 40px;
 }
 
 .section-projects {
@@ -282,28 +247,28 @@ nav {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   &.bg2 {
     background-image: url(sweater_weather.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   &.bg3 {
     background-image: url(curl_ss.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   &.bg4 {
     background-image: url(tuneview_ss.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    transition: 0.5s;
+    transition: 0.2s;
   }
 
 
@@ -356,3 +321,152 @@ nav {
     }
   }
 }
+
+.mid-col {
+  padding-top: 110px;
+}
+
+
+
+// -------------------------- PROFILE SECTION ----------------------------
+.profile-title-line {
+  border-bottom: 0.25px solid rgb(255, 255, 255);
+}
+
+.profile-header {
+  text-align: center;
+}
+
+
+.section-profile {
+  color: white!important;
+  // height: 100vh;
+  // padding: 25rem 0;
+  
+  z-index: 1;
+  color: black;
+  font-family: 'Roboto', 'sans-serif';
+  // transform: skewY(-7deg);
+  // margin-top: -10rem;
+  // & > * {
+    // transform: skewY(7deg);
+  // }
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)),
+  url(https://images.unsplash.com/photo-1556106792-39992e83c564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80);
+  background-color: transparent;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 0px;
+  padding-bottom: 50px;
+}
+
+.face {
+  height: 300px;
+  clip-path: circle(35% at 50% 50%);
+}
+
+.profile-line {
+  color: black;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+// --------------------------- PROFILE SECTION: CARD STYLING -------------------------------
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 275px 275px 275px;
+  grid-row-gap: 8rem;
+  grid-column-gap: 6rem;
+  justify-content: center;
+  padding: 4rem 10rem;
+}
+
+.pcard {
+
+  $color-primary-dark: #0D4D4D;
+  $color-primary-light: #407F7F;
+
+  perspective: 150rem;
+  // the lower the value perspective, the more dramatic the effect
+  -moz-perspective: 150rem;
+  background-color: #fff;
+  position: relative;
+  background: transparent;
+  height: 23rem;
+  
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+  
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // front side styling
+
+  &__logo {
+    background-size: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__icon {
+    padding-top: 5px;
+  }
+
+  &__role {
+    font-size: 1rem;
+  }
+
+  &__company {
+    font-size: .6rem;
+    font-style: italic;
+  }
+
+  &__date-range {
+    font-size: .8rem;
+  }
+
+  &__description {
+    padding: 15px;
+    font-size: .7rem;
+    padding-top: 25px;
+  }
+  
+  &__side {
+    height: 23rem;
+    transition: all .8s ease;
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1rem 40px rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+    
+    &--front {
+      background-color: #fff;
+    }
+
+    &--back {
+      transform: rotateY(-180deg);
+      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+      color: #fff;
+      text-align: center;
+    }
+  }
+  
+}
+
+// --------------------------------
