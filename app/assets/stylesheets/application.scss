@@ -24,7 +24,6 @@
 }
 
 body {
-  background: #000000; 
   color: rgb(255, 253, 253);
   font-family: 'Cinzel', serif;
   box-sizing: border-box;
@@ -32,13 +31,43 @@ body {
   height: 100vh;
 }
 
-header {
-  height: 25vh;
+// ---------- Nav bar ------------
+
+.section-navigation {
+  list-style: none;
+  padding: 3rem;
+  float: right;
 }
 
-nav {
-  list-style: none;
+.nav-link {
+  border: 1px solid rgb(255, 255, 255);
+  display: inline;
+  text-align: center;
+  background: none;
+  cursor: pointer;
+  animation: fadeIn 3s ease-in;
+  transition: 0.3s;
+
+  &:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
 }
+
+
+.nav-right {
+  & a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.831);
+  }
+
+  & li {
+    padding-right: 30px;
+    display: inline-block;
+  }
+}
+
+// ------------------------------------------------------------------------
 
 #name-logo {
   overflow: hidden;
@@ -162,21 +191,13 @@ nav {
   // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.nav-link {
-  border: 1px solid rgb(255, 255, 255);
-  display: inline;
-  text-align: center;
-  background: none;
-  cursor: pointer;
-  animation: fadeIn 3s ease-in;
-  transition: 0.3s;
-
-  &:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-  }
+.hero--heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // margin: 0;
+  transform: translate(-50%, -50%);
 }
-
 
 
 .my-custom-row {
@@ -187,22 +208,6 @@ nav {
 
 
 
-.nav-right {
-  float: right;
-  list-style: none;
-  margin-top: 3.5rem;
-  margin-right: 4rem;
-}
-
-.nav-right a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.831);
-}
-
-.nav-right li {
-  padding-right: 30px;
-  display: inline;
-}
 
 
 
@@ -220,12 +225,12 @@ nav {
 
 .project-heading {
   text-align: center;
-  clear: float;
-  margin: 40px;
+  padding-bottom: 10px;
 }
 
 .section-projects {
-  color: black;
+  color: white;
+  background-color: black;
 }
 
 .active {
@@ -333,8 +338,9 @@ nav {
   border-bottom: 0.25px solid rgb(255, 255, 255);
 }
 
-.profile-header {
+.profile-heading {
   text-align: center;
+  font-family: 'Cinzel', serif;
 }
 
 
@@ -469,4 +475,8 @@ nav {
   
 }
 
-// --------------------------------
+// -------------------------------- SKILLS SECTION ---------------------
+.section-skills {
+  height: 100vh;
+
+}
