@@ -27,20 +27,18 @@
       <h1 class="display-2" id="name-script"><%= render 'layouts/name'%></h1>
     </section>
   </section>
-  <section class="section-profile">
-      <%# <hr class="separation-line" /> %>
-      <%= image_tag 'plumbus.jpg', class: 'face' %>
-  </section>
+  <%= render 'layouts/profile' %>
   <section class="section-description">
-  
+
   </section>
   <div class="heading-projects">
-    <h1 class="display-1 project-heading" >Recent Projects</h1>
-    
+    <h3 class="display-3 project-heading" >Here's what I've built</h1>
+    <p class="project-heading">(besides the site you're on)</p>
   </div>
   <section class="section-projects">
     <%= render 'layouts/projects'%>
   </section>
+
 
 </body>
 </html>

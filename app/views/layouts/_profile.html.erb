@@ -1,0 +1,47 @@
+<section class="section-profile">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm left-col">
+        <%= image_tag 'plumbus.jpg', class: 'face' %>
+      </div>
+      <div class="col-sm mid-col">
+        <h1>Here's what I've been up to </h1>
+        <hr class="profile-title-line" />
+        
+      </div>
+      <div class="col-sm">
+      </div>
+    </div>
+  </div>    
+
+  <div class="profile-grid">
+    <% @experiences.each do |e| %>
+      <div class="col-sm">
+        <div class="pcard">
+          <div class="pcard__side pcard__side--front">
+            <div class="pcard__logo" style="background-image: url(<%= "#{e.image_url}"%>)">
+            </div>
+          </div>
+          <div class="pcard__side pcard__side--back">
+            <div class="pcard__icon">
+              <i class="<%= "#{e.icon}"%>"></i>
+            </div>
+            <div class="pcard__role">
+              <%= e.role %> 
+            </div>
+            <div class="pcard__company">
+              <%= e.company %>
+            </div>
+            <div class="pcard__date-range">
+              <%= "#{e.date_range}" %>
+            </div>
+            <div class="pcard__description">
+              "<%= "#{e.description}" %>"
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
