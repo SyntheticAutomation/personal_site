@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_01_28_162623) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "experiences", force: :cascade do |t|
+    t.string "company"
+    t.string "role"
+    t.string "date_range"
+    t.string "description"
+    t.string "location"
+    t.string "image_url"
+    t.string "icon"
+  end
 
 end
