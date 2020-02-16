@@ -1,0 +1,16 @@
+
+<div class="blurred-box">
+<h1 class="profile-heading">What I Know</h1>
+  <div class="skills-grid">
+  <% @skills.each do |s| %>
+    <div class="col-sm">
+      <div class="grid-card">
+        <div class="grid-skill-text">
+          <%= s.name %>
+        </div>
+      </div>
+    </div>
+  <%end %>
+  </div>
+</div>
+<canvas id="canvas1"></canvas>
