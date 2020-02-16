@@ -97,65 +97,24 @@ experience_7 = Experience.create(
   I published several research papers on Linguistics and Psychology which facilitated my understanding of language and human thought."
 )
 
-# experience_7 = Experience.create(
-#   company: 
-#   role:
-#   date_range:
-#   location:
-#   image_url:
-#   icon:
-#   description:
-# )
+skills = [
+  "Object-oriented Programming", 
+  "Active Directory", 
+  "Javascript", 
+  "Virus Remediation", 
+  "Agile Methodology",
+  "API Development",
+  "OWASP Top 10",
+  "Full Stack Engineering",
+  "UI/UX",
+  "Mac / Windows / Linux OS",
+  "World-Class Customer Service",
+  "Social Engineering",
+  "Bash / command line",
+  "Git workflow",
+  "Vulnerability Scanning",
+  "REST API"]
 
-# experience_7 = Experience.create(
-#   company: 
-#   role:
-#   date_range:
-#   location:
-#   image_url:
-#   icon:
-#   description:
-# )
-# experience_7 = Experience.create(
-#   company: 
-#   role:
-#   date_range:
-#   location:
-#   image_url:
-#   icon:
-#   description:
-# )
-# experience_7 = Experience.create(
-#   company: 
-#   role:
-#   date_range:
-#   location:
-#   image_url:
-#   icon:
-#   description:
-# )
-# experience_7 = Experience.create(
-#   company: 
-#   role:
-#   date_range:
-#   location:
-#   image_url:
-#   icon:
-#   description:
-# )
-# experience_7 = Experience.create(
-#   company: 
-#   role:
-#   date_range:
-#   location:
-#   image_url:
-#   icon:
-#   description:
-# )
-
-
-
-
-
-
-
+skills.sort.each do |s|
+  Skill.create(name: "#{s}")
+end

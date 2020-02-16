@@ -10,5 +10,6 @@ class CreateExperiences < ActiveRecord::Migration[5.2]
       t.string "image_url"
       t.string "icon"
     end
+    
   end
 end
